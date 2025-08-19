@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="aula4-2.html" method="get">
+        <p>Insira o seu nome:
+            <input type="text" name="nome">
+        </p>
+        <p>Informe a sua idade: <input type="number" min="1" max="130" step="1" name="idade" id=""></p>
+        <p><input type="checkbox" name="opcao1" id="">Opção 1
+        <input type="checkbox" name="opcao2" id="">Opção 2
+        </p>
+        <p>
+            <input type="color">
+        </p>
+        <p>
+            <input type="date">
+            <input type="datetime">
+        </p>
+        <p><input type="email" name="email" id=""></p>
+        <p>
+            <input type="file">
+        </p>
+        <p>
+            <input type="hidden" name="oculto" value="oculto">
+        </p>
+        <p>
+            <input type="image" src="data:image/png;base64,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" alt="Imagem" width="50px" height="auto" onclick="alert('Clicado');">
+        </p>
+
+        <p><input type="submit" value="Enviar"> &nbsp;&nbsp;<input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
