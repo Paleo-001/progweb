@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+    font-size: x-large;
+}
+a:visited{
+    color: bisque;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: red;
+}
+#titulo{
+    color: blue;
+}
+h1:hover{
+    color: red;
+}

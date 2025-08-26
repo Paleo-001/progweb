@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 - CSS</title>
+    <style>
+        .interna {
+            color: purple;
+        }
+    </style>
+    <link rel="stylesheet" href="aula5.css">
+    <style type="text/css">
+        @import url(aula5-2.css);
+    </style>
+</head>
+<body style="background-image: url('https://ecampus.ftec.com.br/img/loja/logo-ftec.png');">
+    <h1>Introdução ao CSS</h1>
+    <ol style="background-color: lightgreen;">
+        <li><span style="color: blue;">Inline:</span> Inserir na mesma linha da TAG a que ele se refere;</li>
+        <li><span class="interna">Interna:</span> Inserir todo o CSS em uma determinada área do código;</li>
+        <li><span class="externa">Externa:</span> Utiliza um arquivo externo.</li>
+    </ol>
+    <ul>
+        <li><span>Inline</span></li>
+        <li><span>Interna</span></li>
+        <li><span class="externa2">Externa</span></li>
+    </ul>
+    <hr>
+    <summary>Inline<details>background-color, font-family, color, font-size</details></summary>
+    <summary>TAG &lt;style&gt;<details>background-color, font-family, color, font-size</details></summary>
+    
+</body>
+</html>
