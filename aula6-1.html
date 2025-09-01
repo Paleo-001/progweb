@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de CSS</title>
+    <link rel="stylesheet" href="aula6-1.css">
+</head>
+<body>
+    <header class="barra-fixa">
+        <strong>Barra fixa</strong> (position: fixed) = fica no topo da tela
+    </header>
+    <nav class="nav-sticky">
+        <span>Menu (sticky):</span>
+        <a href="#width">width x max-width</a>
+        <a href="#position">position</a>
+        <a href="#overflow">overflow</a>
+        <a href="#float">float</a>
+        <a href="#inline-block">inline-block & alinhamento</a>
+        <a href="#combinadores">combinadores</a>
+        <a href="#pseudo">pseudo-classes</a>
+        <a href="#navbar">barra de navegação</a>
+        <a href="#especificidade">especificidade</a>
+    </nav>
+    <main class="conteudo">
+        <section id="width" class="bloco">
+            <h2>width x max-width</h2>
+            <p>Reduza/Au,emte a largura da janela e observe o comportamento</p>
+            <div class="linha-cards">
+                <div class="cards width-fixa">
+                    <h3>Esta caixa tem <code>width</code> fixa. Em telas menores, pode causar rolagem horizontal.</h3>
+                </div>
+                <div class="card max-width">
+                    <h3>max-width: 400px</h3>
+                    <p>Esta caixa limita a largura máxima, mas diminui em telas pequenas, mantendo a responsividade.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
