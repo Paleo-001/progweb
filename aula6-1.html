@@ -27,7 +27,7 @@
             <h2>width x max-width</h2>
             <p>Reduza/Au,emte a largura da janela e observe o comportamento</p>
             <div class="linha-cards">
-                <div class="cards width-fixa">
+                <div class="card width-fixa">
                     <h3>Esta caixa tem <code>width</code> fixa. Em telas menores, pode causar rolagem horizontal.</h3>
                 </div>
                 <div class="card max-width">
@@ -36,7 +36,171 @@
                 </div>
             </div>
         </section>
-
+        <section id="position" class="bloco">
+            <h2>position (static, relative, absolute, fixed, sticky) + z-index</h2>
+            <div class="caixa-posicionamento">
+                <div class="static">Estático (padrão)</div>
+                <div class="relative">relativo (deslocamento)</div>
+                <div class="ancora-relativa">Ancora (relativa) -> base do absolute</div>
+                <div class="absolute">Absoluto (relativo à âncora)</div>
+            </div>
+            <div class="sobrepostos">
+                <div class="box z1">z-index: 1</div>
+                <div class="box z3">z-index: 3</div>
+                <div class="box z2">z-index: 2</div>
+            </div>
+            <p class="nota">A barra no topo é <strong>fixed</strong>. A navegação logo abaixo é <strong>sticky</strong> (gruda no topo ao rolar.)</p>
+          </section>
+          <section id="overflow" class="bloco">
+            <h2>Overflow</h2>
+            <div class="linha-cards">
+                <div class="caixa-over ov-visible">
+                    <h4>Visível</h4>
+                    <p>Conteúdo vaza para fora e continua visível... Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quam adipisci magnam ducimus maiores vero libero in eligendi laborum animi.</p>
+                </div>
+                <div class="caixa-over ov-hidden">
+                    <h4>Invisível</h4>
+                    <p>Conteúdo que ultrapassa fica oculto... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, veritatis? Iusto tenetur dolorum blanditiis deleniti eveniet? Esse quam necessitatibus sunt perspiciatis consequatur? Dolore facilis veniam ex deleniti dolor doloribus?</p>
+                </div>
+                <div class="caixa-over ov-scroll">
+                    <h4>Rolagem</h4>
+                    <p>Força barras de rolagem... Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate pariatur quis asperiores veniam quasi nihil a sequi maxime quo, delectus quisquam labore placeat tempora quia quibusdam. Repellendus, numquam esse!</p>
+                </div>
+                <div class="caixa-over">
+                    <h4>Auto</h4>
+                    <p>Mostra barras apenas quando necessário... Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error necessitatibus, soluta iure quia et, repellat facere optio magni, libero corporis! Tenetur maiores officiis recusandae! Architecto sint quidem assumenda!</p>
+                </div>
+            </div>
+          </section>
+          <section id="float" class="bloco">
+            <h2>Float</h2>
+            <div class="float-exemplo">
+                <img src="https://picsum.photos/140/140" alt="Imagem aleatória" class="flutua-esq">
+                <p><strong>float: left;</strong> O texto contorna a imagem. O fluxo do parágrafo fica em torno dela.</p>
+                <p class="clear">Esta linha usa <code>clear: both</code> para não contornar a imagem.</p>
+            <div class="float-exemplo">
+                    <img src="https://picsum.photos/140/140" alt="Imagem aleatória" class="flutua-dir">
+            </div>
+            <p><strong>float: right</strong> Agora a imagem flutua à direita e o texto contorna do lado oposto.</p>
+            <p class="clear">Limpeza do Fluxo após <code>floats</code> usando o <code>clear.</code></p>
+        </div>
+        </section>
+        <section id="inline-block" class="bloco">
+        <section id="inline-block" class="bloco"> 
+            <h2>inline-block & centralização</h2> 
+            <h3>Itens lado a lado com inline-block</h3> 
+            <div class="faixa-inline"> 
+                <div class="item-inline">A</div> 
+                <div class="item-inline">B</div> 
+                <div class="item-inline">C</div> 
+            </div> 
+            <h3>Centralizar</h3> 
+            <div class="centros"> 
+                <div class="centro1"> 
+                <div class="caixa-centro largura-definida">margin: auto</div> 
+                </div> 
+                <div class="centro2"> 
+                <div class="caixa-centro absoluto">position + transform</div> 
+                </div> 
+                <div class="centro3"> 
+                <div class="caixa-centro texto">text-align (para inline)</div> 
+                </div> 
+            </div> 
+        </section> 
+        <section id="combinadores" class="bloco"> 
+            <h2>Combinadores</h2> 
+            <div class="comb-container"> 
+                <div class="pai"> 
+                <p>Descendente: <code>.pai p</code> (qualquer p dentro de .pai)</p> 
+                <div class="filho"> 
+                    <p>Filho direto: <code>.pai &gt; .filho</code></p> 
+                </div> 
+                <p class="irmao-alvo">Eu sou um parágrafo que virá antes dos irmãos</p> 
+                <p class="irmao-adjacente">Irmão adjacente (+): só este recebe</p> 
+                <p class="irmao-geral">Irmão geral (~): este recebe</p> 
+                <p class="irmao-geral">Irmão geral (~): este também recebe</p> 
+                </div> 
+            </div> 
+        </section> 
+        <section id="pseudo" class="bloco"> 
+            <h2>Pseudo-classes & pseudo-elementos</h2> 
+            <div class="hover-ex"> 
+                Passe o mouse: <span class="alvo-hover">hover em mim</span> 
+            </div> 
+            <ul class="lista-nth"> 
+                <li>Item 1</li> 
+                <li>Item 2 (pares)</li> 
+                <li>Item 3</li> 
+                <li>Item 4 (pares)</li> 
+                <li>Item 5</li> 
+            </ul> 
+            <p class="first-last"> 
+                <span>Sou o primeiro filho</span> 
+                <span>Sou do meio</span> 
+                <span>Sou o último filho</span> 
+            </p> 
+            <div class="check-valid"> 
+                <label> 
+                <input type="checkbox" class="marcar"> Marque-me (:checked) 
+                </label> 
+                <form class="form-valid" novalidate> 
+                <input type="email" placeholder="email válido ativa :valid" required /> 
+                </form> 
+            </div> 
+            <article class="texto-formatado"> 
+                Este parágrafo demonstra <em>::first-line</em> e <em>::first-letter</em>. Selecione um trecho para ver <em>::selection</em>. 
+            </article> 
+            <ul class="lista-marcadores"> 
+                <li>Marcador customizado 1</li> 
+                <li>Marcador customizado 2</li> 
+                <li>Marcador customizado 3</li> 
+            </ul> 
+            <div class="before-after"> 
+                Texto com <span class="chip">::before</span> e <span class="chip">::after</span> 
+            </div> 
+            <div class="opacidade"> 
+                <div class="caixa-opacity">opacity: 0.5 (hover para 1)</div> 
+            </div> 
+        </section> 
+        <section id="navbar" class="bloco"> 
+            <h2>Barras de navegação</h2> 
+            <div class="navs-demo"> 
+                <div> 
+                <h3>Vertical (display: block)</h3> 
+                <ul class="nav-vertical"> 
+                    <li><a href="#">Início</a></li> 
+                    <li><a href="#">Serviços</a></li> 
+                    <li><a href="#">Contato</a></li> 
+                </ul> 
+                </div> 
+                <div> 
+                <h3>Horizontal (inline/inline-block)</h3> 
+                <ul class="nav-horizontal"> 
+                    <li><a href="#">Início</a></li> 
+                    <li><a href="#">Serviços</a></li> 
+                    <li><a href="#">Contato</a></li> 
+                </ul> 
+                </div> 
+            </div> 
+        </section> 
+        <section id="especificidade" class="bloco"> 
+            <h2>Especificidade</h2> 
+            <p class="explica">Clique para alternar a classe <code>.forcar-azul</code> (especificidade 10) e observe o estilo aplicado, mesmo havendo uma regra por tag (1) e outra por id (100). Há também um exemplo com <code>!important</code>.</p> 
+            <div class="esp-area"> 
+                <button id="botao-azul">Alternar classe .forcar-azul</button> 
+                <p id="alvo-esp" class="alvo-esp">Texto alvo de especificidade</p> 
+                <p class="important-demo">Eu tenho <code>!important</code> aplicado.</p> 
+            </div> 
+        </section> 
     </main>
+    <footer class="rodape-fixo"> 
+        Rodapé fixo — exemplo de <code>position: fixed</code>. 
+    </footer> 
+    <script> 
+        // Script pequeno apenas para alternar a classe no exemplo de especificidade 
+        document.getElementById('botao-azul').addEventListener('click', function(){ 
+        document.getElementById('alvo-esp').classList.toggle('forcar-azul'); 
+        }); 
+    </script> 
 </body>
 </html>

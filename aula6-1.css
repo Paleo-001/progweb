@@ -9,6 +9,7 @@ body {
 h2 {
     margin-top: 0;
 }
+/* Barra Fixa */
 .barra-fixa {
     position: fixed;
     inset: 0 0 auto 0;
@@ -19,6 +20,7 @@ h2 {
     color: #fff;
     z-index: 9999;
 }
+/* ==== Barra de navegação ===== */
 .nav-sticky {
     position: sticky;
     top: 44px;
@@ -37,4 +39,103 @@ h2 {
 }
 .nav-sticky a:hover { 
     text-decoration: underline; 
+}
+/* Conteúdo */
+.conteudo {
+    padding: 16px;
+    padding-top: calc(44px + 16px);
+    max-width: 1100px;
+    margin: 0 auto 80px;
+}
+.bloco {
+    background: #fff;
+    border: 1px solid #e7e7eb;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+.linha-cards{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fafafa;
+}
+.width-fixa { width: 400px; }
+.max-width{ max-width: 400px; }
+/* POSITION + Z-INDEX */
+.caixa-posicionamento {
+    padding: 8px;
+    display: grid;
+    gap: 12px;
+}
+.static {
+    background: #e0f2fe;
+    padding: 8px;
+}
+.relative {
+    position: relative;
+    left: 10px;
+    top: 4px;
+    background: #dcfce7;
+    padding: 8px;
+}
+.ancora-relativa {
+    position: relative;
+    padding: 16px;
+    background: #fff7ed;
+    border: 1px dashed #f59e0b;
+}
+.absolute {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background: #fde68a;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #f59e0b;
+}
+.sobrepostos {
+    position: relative;
+    height: 110px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box {
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+}
+.z1 {
+    left: 10px;
+    top: 20px;
+    background: #64748b;
+    z-index: 1;
+}
+.z3 {
+    left: 40px;
+    top: 40px;
+    background: #ef4444;
+    z-index: 3;
+}
+.z2 {
+    left: 70px;
+    top: 60px;
+    background: #0ea5e9;
+    z-index: 2;
+}
+.nota {
+    font-size: 14px;
+    color: #444;
 }
