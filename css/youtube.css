@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.secao {
+  display: none;
+}
+
+.youtube {
+  display: block;
+}
+
+.noticias,
+.galeria,
+.youtube-home {
+  display: none;
+}
+
+.video-e-lista {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 16px;
+}
+
+.video-principal img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.video-principal h2 {
+  margin: 12px 0;
+}
+.video-principal p {
+  margin: 0;
+}
+
+.recomendados {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 16px;
+}
+.recomendados .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.recomendados .card h4 {
+  margin: 8px 0 0 0;
+}/*# sourceMappingURL=youtube.css.map */

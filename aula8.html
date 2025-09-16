@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS do layout escolhido dinâmico -->
+<link id="tema" rel="stylesheet" href="css/youtube-home.css">
+<!-- CSS dos controles (fixo e leve) -->
+<link rel="stylesheet" href="css/controles.css">
+<title>Layouts dinâmicos</title>
+</head>
+<body>
+
+<!-- CONTROLES -->
+<nav class="toolbar">
+<button class="btn ativo" data-css="css/youtube-home.css">YouTube (home)</button>
+<button class="btn" data-css="css/youtube.css">YouTube (assistindo)</button>
+<button class="btn" data-css="css/noticias.css">Notícias</button>
+<button class="btn" data-css="css/galeria.css">Galeria</button>
+</nav>
+<main class="conteudo">
+
+<!-- LAYOUT YOUTUBE -->
+<section class="secao youtube-home">
+<nav class="chips">
+<button class="chip ativo">Tudo</button>
+<button class="chip">Música</button>
+<button class="chip">Jogos</button>
+<button class="chip">Notícias</button>
+<button class="chip">Programação</button>
+</nav>
+
+<div class="grade-videos">
+<article class="video">
+<img src="https://picsum.photos/seed/y1/480/270" alt="Thumb 1">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</article>
+
+<article class="video">
+<img src="https://picsum.photos/seed/y2/480/270" alt="Thumb 2">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</article>
+
+<article class="video">
+<img src="https://picsum.photos/seed/y3/480/270" alt="Thumb 3">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</article>
+
+<article class="video">
+<img src="https://picsum.photos/seed/y4/480/270" alt="Thumb 4">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+</article>
+
+<article class="video">
+<img src="https://picsum.photos/seed/y5/480/270" alt="Thumb 5">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+</article>
+
+<article class="video">
+<img src="https://picsum.photos/seed/y6/480/270" alt="Thumb 6">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</article>
+<article class="video">
+<img src="https://picsum.photos/seed/y7/480/270" alt="Thumb 6">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</article>
+
+<article class="video">
+<img src="https://picsum.photos/seed/y8/480/270" alt="Thumb 6">
+<h4>Lorem ipsum dolor sit amet consectetur.</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</article>
+</div>
+</section>
+
+<section class="secao youtube">
+<div class="video-e-lista">
+<article class="video-principal">
+<img src="https://picsum.photos/seed/video/960/540" alt="Vídeo principal">
+<h2>Como criar sites</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam exercitationem quas.</p>
+</article>
+
+<aside class="recomendados">
+<article class="card">
+<img src="https://picsum.photos/seed/rec1/240/240" alt="Recomendado 1">
+<h4>Recomendado 1</h4>
+</article>
+<article class="card">
+<img src="https://picsum.photos/seed/rec2/240/240" alt="Recomendado 2">
+<h4>Recomendado 2</h4>
+</article>
+<article class="card">
+<img src="https://picsum.photos/seed/rec3/240/240" alt="Recomendado 3">
+<h4>Recomendado 3</h4>
+</article>
+<article class="card">
+<img src="https://picsum.photos/seed/rec4/240/240" alt="Recomendado 4">
+<h4>Recomendado 4</h4>
+</article>
+</aside>
+</div>
+</section>
+
+<!-- LAYOUT NOTÍCIAS -->
+<section class="secao noticias">
+<div class="grade-noticias">
+
+<article class="noticia destaque">
+<img src="https://picsum.photos/seed/n1/420/240" alt="Notícia 1">
+<h3>Noticia 1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, modi!</p>
+</article>
+
+<article class="noticia coluna-minis col2">
+<img src="https://picsum.photos/seed/n2/420/240" alt="Notícia 2">
+<h3>Noticia 2</h3>
+
+<ul class="mini-lista">
+<li class="mini">
+<img src="https://picsum.photos/seed/m1/180/100" alt="Mini 1">
+<span>Bermudas</span>
+</li>
+<li class="mini">
+<img src="https://picsum.photos/seed/m2/180/100" alt="Mini 2">
+<span>Bermudas</span>
+</li>
+<li class="mini">
+<img src="https://picsum.photos/seed/m3/180/100" alt="Mini 3">
+<span>Bermudas</span>
+</li>
+</ul>
+</article>
+
+<article class="noticia coluna-minis col3">
+<img src="https://picsum.photos/seed/n3/420/240" alt="Notícia 3">
+<h3>Noticia 3</h3>
+
+<ul class="mini-lista">
+<li class="mini">
+<img src="https://picsum.photos/seed/m4/180/100" alt="Mini 4">
+<span>Bermudas</span>
+</li>
+<li class="mini">
+<img src="https://picsum.photos/seed/m5/180/100" alt="Mini 5">
+<span>Bermudas</span>
+</li>
+<li class="mini">
+<img src="https://picsum.photos/seed/m6/180/100" alt="Mini 6">
+<span>Bermudas</span>
+</li>
+</ul>
+</article>
+
+<aside class="anuncio">
+<div class="quadro"></div>
+<p>Propaganda</p>
+</aside>
+
+</div>
+</section>
+
+
+<!-- LAYOUT GALERIA -->
+<section class="secao galeria">
+<div class="grid-galeria">
+<figure class="foto grande">
+<img src="https://picsum.photos/seed/g1/520/520" alt="Foto 1">
+<figcaption>Legenda Imagem</figcaption>
+</figure>
+<figure class="foto">
+<img src="https://picsum.photos/seed/g2/520/320" alt="Foto 2">
+<figcaption>Legenda Imagem</figcaption>
+</figure>
+<figure class="foto">
+<img src="https://picsum.photos/seed/g3/520/320" alt="Foto 3">
+<figcaption>Legenda Imagem</figcaption>
+</figure>
+</div>
+</section>
+
+</main>
+<noscript>Ative JavaScript para alternar os layouts.</noscript>
+<script src="js/trocar-css.js"></script>
+</body>
+</html>
