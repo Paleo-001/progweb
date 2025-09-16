@@ -9,10 +9,10 @@ $fundo: darken(navy, 35%);
     box-shadow: $shadow;
 }
 
-@mixin container() {
+@mixin container() { 
     max-width: $largura-maxima;
     margin: 0 auto;
-    padding: $gap;
+    padding: $gap; 
 }
 
 * { box-sizing: border-box;}
