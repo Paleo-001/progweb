@@ -1,3 +1,53 @@
 $largura-maxima: 1200px;
 $gap: 16px;
+$fundo: darken(navy, 35%);
 
+@mixin card($radius: 8px, $shadow: 0 4px 16px rgba(0,0,0,.15)) {
+    position: relative;
+    overflow: hidden;
+    border-radius: $radius;
+    box-shadow: $shadow;
+}
+
+@mixin container() {
+    max-width: $largura-maxima;
+    margin: 0 auto;
+    padding: $gap;
+}
+
+* { box-sizing: border-box;}
+body { margin: 0;}
+
+.conteudo { @include container(); }
+
+.secao, .youtube, .noticias, .youtube-home { display: none;}
+.galeria { display: block;}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap;
+}
+
+.foto {
+    @include card();
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    figcaption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $fundo;
+        color: #fff;
+        padding: 8 px 12px;
+        font-size: 14px;
+    }
+}
+
+.foto.grande {
+    grid-row: span 2;
+}

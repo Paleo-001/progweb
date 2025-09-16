@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.secao, .youtube, .noticias, .youtube-home {
+  display: none;
+}
+
+.galeria {
+  display: block;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.foto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.foto figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  color: #fff;
+  padding: 8 px 12px;
+  font-size: 14px;
+}
+
+.foto.grande {
+  grid-row: span 2;
+}/*# sourceMappingURL=galeria.css.map */
