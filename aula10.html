@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+</head>
+<body>
+    <form name="teste" id="fTeste">
+        Nome: <input type="text" id="nome"><br>
+        Maior? <input type="radio" name="maior" value="sim"> Sim
+        <input type="radio" name="maior" value="nao"> Não<br>
+        Interesses: <input type="checkbox" name="js" id=""> JavaScript
+        <input type="checkbox" name="css" id=""> CSS<br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>   
+    <script>
+        const formulario = document.getElementById("fTeste");
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault();
+            let nome = document.getElementById("nome").value;
+            let rMaior = document.getElementsByName("maior");
+            let valor = "";
+            for (const selecionado of rMaior){
+                if(selecionado.checked){
+                    valor = selecionado.value;
+                    if(valor == 'sim') {
+                        valor = "maior";
+                    } else {
+                        valor = "menor";
+                    }
+                    break;
+                } else {
+                    alert("Você precisa informar se é maior de idade ou não!");
+                    return;
+                }
+            }
+            let interesse = "";
+            let texto = "Olá " + nome + " que é " + valor + " de idade e possui interesse em " + interesse + "!";
+            alert(texto);
+        });
+    </script> 
+</body>
+</html>
