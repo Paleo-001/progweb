@@ -1,0 +1,9 @@
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin box-nova($t1,$t2,$t3,$t4,$t5,$t6,$t7){
+    -webkit-box-nova: $t1,$t2,$t3,rgba($t4,$t5,$t6,rgba($t7));
+    box-nova: $t1 $t2 $t3 rgba($t4,$t5,$t6,rgba($t7));
+}

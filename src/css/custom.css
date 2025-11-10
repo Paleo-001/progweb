@@ -1,0 +1,23 @@
+/* Error: Only 4 arguments allowed, but 7 were passed.
+ *   ,--> src/scss/_buttons.scss
+ * 5 |     @include box-nova('3px','3px','6px',1,1,1,0.5);
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> src/scss/_mixins.scss
+ * 6 | @mixin box-nova($t1,$t2,$t3,$t4){
+ *   |        ========================= declaration
+ *   '
+ *   src/scss/_buttons.scss 5:5  box-nova()
+ *   src/scss/_buttons.scss 5:5  @import
+ *   src/scss/custom.scss 5:9    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Only 4 arguments allowed, but 7 were passed.\a   \250c \2500 \2500 > src/scss/_buttons.scss\a 5 \2502      @include box-nova('3px','3px','6px',1,1,1,0.5);\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > src/scss/_mixins.scss\a 6 \2502  @mixin box-nova($t1,$t2,$t3,$t4){\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   src/scss/_buttons.scss 5:5  box-nova()\a   src/scss/_buttons.scss 5:5  @import\a   src/scss/custom.scss 5:9    root stylesheet";
+}

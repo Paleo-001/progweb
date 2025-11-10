@@ -1,0 +1,12 @@
+@use "sass:math";
+
+.btn-custom {
+    // @include box-shadow(2px 2px 5px rgba(0,0,0,0.3));
+    @include box-nova('3px','3px','6px',1,1,1,0.5);
+    background-color: $primary;
+    border: none;
+    padding: math.div($base-spacing, 2);
+    &:hover {
+        background-color: lighten($primary, 10%);
+    }
+}
