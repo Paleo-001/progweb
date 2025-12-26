@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Fade-In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .fade{
+            opacity: 0;
+            transition: opacity 45s easy;
+        }
+        .fade.show{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Título</h1>
+        <div id="fadeAlert" class="alert alert-primary fade" role="alert">
+            Esta é uma animação fade-in com Bootstrap.
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('fadeAlert').classList.add('show');
+            }, 3000);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.gallery {
+    padding: $base-spacing * 2 0;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: $base-spacing * 2;
+      color: $primary;
+    }
+  
+    img {
+      margin-bottom: $base-spacing;
+      @include border-radius(10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  

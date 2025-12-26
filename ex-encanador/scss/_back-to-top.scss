@@ -1,0 +1,19 @@
+.back-to-top {
+    display: none; // Inicialmente escondido
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $primary;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    @include border-radius(50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+  

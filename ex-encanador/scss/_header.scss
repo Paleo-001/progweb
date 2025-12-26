@@ -1,0 +1,13 @@
+.header {
+    .navbar-brand img {
+      height: 40px;
+    }
+    
+    .nav-link {
+      color: $primary;
+      &:hover {
+        color: darken($primary, 10%);
+      }
+    }
+  }
+  
